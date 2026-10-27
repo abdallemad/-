@@ -18,7 +18,11 @@ const title = "فبريكا — مغسلة سجاد وبطاطين في دكرن
 const description =
   "أكبر مغسلة سجاد وبطاطين في دكرنس. بنستلم من باب بيتك ونرجّعلك حاجتك جديدة لحد الباب. تغطية كاملة لدكرنس وخط المنزلة وخط المنصورة.";
 
+// ← استبدل بـ URL الموقع الفعلي على Vercel بعد النشر
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fabrika-dakrns.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title,
   description,
   openGraph: {

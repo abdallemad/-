@@ -5,7 +5,7 @@ import { CallButton, WhatsAppButton } from "@/components/landing/cta-buttons";
 const promises = [
   "استلام وتوصيل لحد باب البيت",
   "سجاد وموكيت وبطاطين",
-  "دكرنس وخط المنزلة وخط دمياط",
+  "دكرنس وخط المنزلة وخط المنصورة",
 ];
 
 export function HeroSection() {
@@ -32,8 +32,8 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-6 max-w-xl text-xl leading-relaxed text-muted-foreground">
-            لا شيل ولا نشر ولا وجع ضهر. بنستلم من باب بيتك، نغسل وننشّف عندنا،
-            ونرجّعلك حاجتك نضيفة وريحتها حلوة لحد الباب.
+            لا شيل ولا نشر ولا وجع ضهر. بنستلم من باب بيتك، نغسل وننشّف عندنا في
+            خلال ٢٤–٤٨ ساعة، ونرجّعلك حاجتك نضيفة وريحتها حلوة لحد الباب.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

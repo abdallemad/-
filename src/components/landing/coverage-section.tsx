@@ -43,7 +43,7 @@ export function CoverageSection() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="بنوصل فين؟"
-          title="دكرنس وخط المنزلة وخط دمياط"
+          title="دكرنس وخط المنزلة وخط المنصورة"
           subtitle="خدمة الاستلام والتوصيل من الباب للباب شغّالة في دكرنس وعلى الخطين."
         />
 
@@ -60,7 +60,7 @@ export function CoverageSection() {
           </div>
 
           <Road className="border-navy/50" flip />
-          <LineStop name="خط دمياط" className="border-navy/30" />
+          <LineStop name="خط المنصورة" className="border-navy/30" />
         </AnimatedSection>
 
         <div className="mx-auto mt-12 flex max-w-2xl flex-col items-center gap-5 rounded-3xl bg-secondary p-7 text-center">

@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { BrandMark } from "@/components/landing/brand-mark";
 import { WhatsAppButton } from "@/components/landing/cta-buttons";
 import { site } from "@/lib/site";
+import { FacebookIcon } from "@/components/ui/facebook-icon";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,10 +44,21 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <WhatsAppButton className="hidden h-11 px-5 text-base shadow-none md:inline-flex">
-            احجزي استلام
-          </WhatsAppButton>
+          {/* Facebook + CTA */}
+          <div className="hidden items-center gap-3 md:flex">
+            <a
+              href={site.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="صفحة فبريكا على فيسبوك"
+              className="flex size-9 items-center justify-center rounded-full text-foreground/60 transition-colors hover:text-[#1877F2]"
+            >
+              <FacebookIcon className="size-5" />
+            </a>
+            <WhatsAppButton className="h-11 px-5 text-base shadow-none">
+              احجزي استلام
+            </WhatsAppButton>
+          </div>
 
           {/* Mobile Menu Button */}
           <button

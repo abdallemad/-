@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { BrandMark } from "@/components/landing/brand-mark";
 import { phoneLink, site, whatsappLink } from "@/lib/site";
+import { FacebookIcon } from "@/components/ui/facebook-icon";
 
 export function Footer() {
   const links = [
@@ -69,6 +70,17 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <MapPin className="size-5 text-gold" aria-hidden="true" />
                 <span>{site.address}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FacebookIcon className="size-5 text-gold" aria-hidden="true" />
+                <a
+                  href={site.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-gold"
+                >
+                  فيسبوك
+                </a>
               </li>
             </ul>
           </div>
